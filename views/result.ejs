@@ -1,0 +1,14 @@
+<%- include('partials/header.ejs') %>
+  <br /><br />
+<div class="box" style="border-color: <%= header_dec_border %>; background-color: <%= header_dec_bg %>;"> <span><%= header_desc %></span></div>
+<br />
+<div class="box" style="border-color: <%= result_border %>; background-color: <%= result_bg %>;"><span><span style="font-size:25px;font-weight:bold;">Result summary:</span><br /><br />Your height is <b><%= height %>cm</b> and weight is <b><%= weight %>kg</b> which indicates that you are <b><%= bmi %></b>. According to calculations to achieve your goal you should walk <b><%= steps %> Steps</b>, OR <b><%= tt %></b>, OR <b><%= td %> Km</b> daily for <b><%= d_time %> Days</b>. </span></div>
+<br />
+<div class="box" style="border-color: #b026ff; background-color:#dda1ff;"><span><span style="font-size:25px;font-weight:bold;">Suggestion:</span><br /><br />You have great potential. You can do better than this easily. Don't take too much pressure. Just channelize your energy and time and achieve a goal towards healthy you. You should aim for <b><%= sug_weight %>Kg</b>. Sounds like a tough goal to achieve? It's not! You need to walk for <b>2 Hr</b>, OR <b><%= sug_dis %> Km</b>, OR <b>20000 Steps</b> for <b><%= sug_days %> Days</b>.<br /><br /> Always remember consistency is the key. Doing extra, taking the extra mile is always good. You can do that too. How? By adding these items to your daily diet, <i><%= l_w_d %></i>. Drink at least 3.5 Litre of water a day, stay hydrated.<br /><br />Basically, these play important role in burning fat fast: <i><%= l_w_c %></i>.<br /><br /><h4>You can try the home workout. Try these apps given below, you'll like them!!</h4></span>
+<center>
+  <a href="https://play.google.com/store/apps/developer?id=Leap+Fitness+Group">
+  <img src="play.png" id="playPic" alt="Get on playstore"></a>
+  </center>
+</div>
+
+<%- include('partials/footer.ejs') %>

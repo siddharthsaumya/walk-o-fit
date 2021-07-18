@@ -1,0 +1,23 @@
+<%- include('partials/header.ejs') %>
+
+<form action="/" method="post">
+<center>
+  <br /><br />
+  <b style="padding-top:100px;">Your Gender</b><br />
+<label id="ml" class="border-grey"><input type="radio" id="male" name="gender" value="m" required>Male</label>
+<label id="fl" class="border-grey"><input type="radio" id="female" name="gender" value="f">Female</label><br />
+<br />
+<input autocomplete="off" type="number" name="height" id="height" placeholder="Height (Cm)" required>
+<input autocomplete="off" type="number" name="weight" id="weight" placeholder="Weight (Kg)" required><br />
+<br /><br /><b style="padding-top:100px;">Your Walking Speed</b><br />
+<label id="sl" class="border-grey"><input type="radio" id="slow" name="speed" value="72" required>Slow</label>
+<label id="nl" class="border-grey"><input type="radio" id="normal" name="speed" value="84">Normal</label>
+<label id="bl" class="border-grey"><input type="radio" id="brisk" name="speed" value="105">Brisk</label><br />
+<br /><input autocomplete="off" type="number" id="dtime" name="dtime" placeholder="Target (Days)" required>
+<input autocomplete="off" type="number" id="dweight" name="dweight" placeholder="Target (Kg)" required>
+<br><br />
+<input type="submit" value="Calculate" style="color:white;" id="submitBtn"/>
+</center>
+</form>
+
+<%- include('partials/footer.ejs') %>

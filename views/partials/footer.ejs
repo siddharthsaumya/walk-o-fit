@@ -1,0 +1,32 @@
+</body>
+<footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $("#male").click(function(){
+      $("#ml").removeClass("border-grey").addClass("border-blue");
+      $("#fl").removeClass("border-blue").addClass("border-grey");
+    });
+    $("#female").click(function(){
+      $("#fl").removeClass("border-grey").addClass("border-blue");
+      $("#ml").removeClass("border-blue").addClass("border-grey");
+    });
+
+
+    $("#slow").click(function(){
+      $("#sl").removeClass("border-grey").addClass("border-blue");
+      $("#nl").removeClass("border-blue").addClass("border-grey");
+      $("#bl").removeClass("border-blue").addClass("border-grey");
+    });
+    $("#normal").click(function(){
+      $("#nl").removeClass("border-grey").addClass("border-blue");
+      $("#sl").removeClass("border-blue").addClass("border-grey");
+      $("#bl").removeClass("border-blue").addClass("border-grey");
+    });
+    $("#brisk").click(function(){
+      $("#bl").removeClass("border-grey").addClass("border-blue");
+      $("#nl").removeClass("border-blue").addClass("border-grey");
+      $("#sl").removeClass("border-blue").addClass("border-grey");
+    });
+  </script>
+</footer>
+</html>
